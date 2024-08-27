@@ -17,10 +17,27 @@
 
 .addButton {
   color: white;
-  background-color: rgb(70, 70, 70);
+  background-color: rgb(87, 183, 87);
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  padding: 5px;
 }
 
-.deleteButton {
+.addButton:hover {
+  background-color: rgb(61, 133, 61);
+
+}
+
+
+th {
+  background-color: rgb(164, 219, 235);
   color: white;
-  background-color: rgb(70, 70, 70);
+  width: 200px;
+}
+
+.linkFormat {
+  border-bottom: 1px solid rgb(152, 152, 152);
+  font-weight: bold;
+
 }

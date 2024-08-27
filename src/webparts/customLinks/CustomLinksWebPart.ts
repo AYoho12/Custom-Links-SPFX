@@ -95,7 +95,7 @@ export default class CustomLinksWebPart extends BaseClientSideWebPart<ICustomLin
     if (this.links.length > 0) {
       linksHtml = this.links.map((link, index) => `
         <tr>
-          <td><a href="${escape(link.url)}" target="_blank">${escape(link.title)}</a></td>
+          <td class="${styles.linkFormat}"><a href="${escape(link.url)}" target="_blank">${escape(link.title)}</a></td>
           <td><button class="${styles.editButton}" data-index="${index}">Edit</button></td>
         </tr>
       `).join('');
@@ -108,7 +108,6 @@ export default class CustomLinksWebPart extends BaseClientSideWebPart<ICustomLin
         <thead>
           <tr>
             <th>Link</th>
-            <th></th>
           </tr>
         </thead>
         <tbody>
@@ -188,7 +187,7 @@ export default class CustomLinksWebPart extends BaseClientSideWebPart<ICustomLin
     if (this.editingLinkIndex !== null) {
       fields.push(PropertyPaneButton('deleteLink', {
         text: 'Delete',
-        buttonType: PropertyPaneButtonType.Primary, // Use Primary and style it as Danger if needed
+        buttonType: PropertyPaneButtonType.Normal, // Use Primary and style it as Danger if needed
         onClick: this.deleteLink.bind(this)
       }));
     }
