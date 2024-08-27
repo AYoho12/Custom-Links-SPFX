@@ -16,7 +16,7 @@
     "group": { "default": "Advanced" },
     "title": { "default": "Custom Links" },
     "description": { "default": "Custom Links description" },
-    "officeFabricIconFontName": "Page",
+    "officeFabricIconFontName": "CloudLink",
     "properties": {
       "description": "Custom Links"
     }
