@@ -1,0 +1,21 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+.customLinks {
+  overflow: hidden;
+  padding: 1em;
+  color: "[theme:bodyText, default: #323130]";
+  color: var(--bodyText);
+  &.teams {
+    font-family: $ms-font-family-fallbacks;
+  }
+}
+
+.editButton {
+  color: white;
+  background-color: rgb(70, 70, 70);
+}
+
+.addButton {
+  color: white;
+  background-color: rgb(70, 70, 70);
+}
