@@ -13,6 +13,11 @@
 .editButton {
   color: white;
   background-color: rgb(70, 70, 70);
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  padding: 5px;
+  width: 50px;
 }
 
 .addButton {
@@ -22,11 +27,16 @@
   border: none;
   border-radius: 25px;
   padding: 5px;
+  width: 75px;
 }
 
 .addButton:hover {
   background-color: rgb(61, 133, 61);
 
+}
+
+.editButton:hover {
+  background-color: rgb(39, 39, 39);
 }
 
 th {
